@@ -85,4 +85,4 @@ echo "Volume Tabung = " . $tabung->volume() . " cm³\n";
 
 // Kerucut lain
 $kerucut = new Kerucut(6, 12);
-echo "Volume Kerucut = " . $kerucut->volume() . " cm³\n";
+echo "Volume Kerucut adalah = " . $kerucut->volume() . " cm³\n";
