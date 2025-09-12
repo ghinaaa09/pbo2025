@@ -1,14 +1,15 @@
 <?php
 
-// Contoh penggunaan
+require_once 'Author.php';
+require_once 'Book.php';
+require_once 'Publisher.php';
+
 $author1 = new Author("Ghina Audhiya Khairunisa", "Mahasiswa Sistem Informasi dan penulis muda");
 print_r($author1->show("info"));
 
-// Membuat Publisher
 $publisher1 = new Publisher("Skintasy Publishing", "Jl. Sungai Raya Dalam, Pontianak", "081299988877");
 echo "\nPublisher Phone: " . $publisher1->getPhone() . "\n";
 
-// Membuat Book karya Ghina
 $book1 = new Book(
     987654, 
     "Belajar Sistem Informasi dengan Mudah", 
@@ -20,9 +21,7 @@ $book1 = new Book(
     $publisher1->name
 );
 
-// Menampilkan semua data buku
 print_r($book1->showAll());
 
-// Menampilkan detail berdasarkan ISBN
 print_r($book1->detail(987654));
 ?>
