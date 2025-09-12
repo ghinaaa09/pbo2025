@@ -1,4 +1,10 @@
 <?php
+
+require_once 'Lingkaran.php';
+require_once 'Bola.php';
+require_once 'Tabung.php';
+require_once 'Kerucut.php';
+
 // Membuat object dengan constructor
 
 // Object nasi_tumpeng dari Kerucut
