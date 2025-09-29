@@ -1,0 +1,12 @@
+{
+  "name": "ghinaaa09/pbo2025",
+  "description": "Merupakan package untuk latihan pemograman berorientasi objek",
+  "type": "project",
+  "license": "MIT",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Apps\\": "Apps"
+    }
+  }
+}

@@ -1,7 +1,5 @@
 <?php
-
-require_once 'Apps/Admin/HomePage.php';
-require_once 'Apps/Admin/ManajemenArtikel.php';
+require_once 'vendor/autoload.php';
 
 use Apps\Admin\HomePage;
 use Apps\Admin\ManajemenArtikel;
