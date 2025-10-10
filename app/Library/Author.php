@@ -1,6 +1,5 @@
 <?php
-
-// Class Author
+namespace App\Library;
 class Author {
     public string $name;
     public string $description;

@@ -1,4 +1,5 @@
 <?php
+namespace App\Vehicle;
 class Mobil {
     public $warna;
     public $merk;

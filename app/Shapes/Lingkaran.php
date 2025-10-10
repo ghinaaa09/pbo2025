@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Shapes;
 class Lingkaran {
     const PHI = 3.14;
     public float $jari_jari;
