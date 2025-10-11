@@ -18,4 +18,9 @@ class TenagaKependidikan extends Pegawai
     {
         echo $this->nama . " sedang cuti";
     }
+
+    public function getGajiPokok(): int
+    {
+        return $this->gaji_pokok;
+    }
 }
