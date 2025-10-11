@@ -1,10 +1,20 @@
 <?php
-require_once '../vendor/autoload.php';
 
-use App\Akademik\Dosen;
+require_once __DIR__ . '/../vendor/autoload.php';
 
-$dosen1 = new Dosen(101, "Budi Hartono", "08123456789", "Jl. Cendrawasih No. 10", "198012345");
+use App\Akademik\Dekan;
 
-$dosen1->cekIn();
+$dekan1 = new Dekan(
+    201,
+    "Prof. Dr. Retno Wulandari",
+    81298765432,
+    "Jl. Merdeka No. 1",
+    19751110
+);
 
-echo "<br>NIDN Dosen: " . $dosen1->getNidn();
+$dekan1->cekIn();
+
+echo "<br>NIDN Dekan: " . $dekan1->getNidn();
+
+echo "<br>";
+$dekan1->mengesahkanSuratIjinMagang();
