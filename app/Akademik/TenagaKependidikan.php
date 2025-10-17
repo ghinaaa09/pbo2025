@@ -3,7 +3,7 @@
 namespace App\Akademik;
 
 // TenagaKependidikan adalah Pegawai, dan juga memenuhi kontrak PenilaianKinerja
-class TenagaKependidikan extends Pegawai implements PenilaianKinerja
+class TenagaKependidikan extends Pegawai implements PenilaianKinerja, DapatCuti
 {
     public int $gaji_pokok;
 
@@ -29,6 +29,10 @@ class TenagaKependidikan extends Pegawai implements PenilaianKinerja
         return $this->gaji_pokok * 0.2;
     }
 
+    public function ajukanCuti(int $jumlahHari): void
+    {
+        echo "{$this->nama} sedang mengajukan cuti selama {$jumlahHari} hari.<br>";
+    }
 
     public function cuti(): void
     {
