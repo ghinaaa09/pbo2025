@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Akademik;
 
 // Kelas Pegawai sekarang menjadi abstract
 abstract class Pegawai

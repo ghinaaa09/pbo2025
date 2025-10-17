@@ -1,9 +1,6 @@
 <?php
 
-
-require_once 'Pegawai.php';
-require_once 'PenilaianKinerja.php';
-
+namespace App\Akademik;
 
 // Dosen adalah Pegawai, dan juga memenuhi kontrak PenilaianKinerja
 class Dosen extends Pegawai implements PenilaianKinerja

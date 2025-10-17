@@ -1,5 +1,6 @@
 <?php
 
+namespace App\Akademik;
 
 // TenagaKependidikan adalah Pegawai, dan juga memenuhi kontrak PenilaianKinerja
 class TenagaKependidikan extends Pegawai implements PenilaianKinerja
