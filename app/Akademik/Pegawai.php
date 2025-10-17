@@ -1,13 +1,14 @@
 <?php
 
-namespace App\Akademik;
 
-class Pegawai
+// Kelas Pegawai sekarang menjadi abstract
+abstract class Pegawai
 {
     public int $nip;
     public string $nama;
     protected string $no_hp;
     public string $alamat;
+
 
     public function __construct(int $nip, string $nama, string $no_hp, string $alamat)
     {
@@ -17,25 +18,14 @@ class Pegawai
         $this->alamat = $alamat;
     }
 
-    public function cekIn(): bool
+
+    // Metode ini adalah "kontrak" dari abstract class.
+    // Setiap kelas turunan WAJIB memiliki implementasi metode ini.
+    abstract public function bekerja(): void;
+
+
+    public function cekIn(): void
     {
         echo $this->nama . " berhasil cek in.<br>";
-        return true;
-    }
-
-    public function cekOut(): bool
-    {
-        echo $this->nama . " berhasil cek out.<br>";
-        return true;
-    }
-
-    protected function getNoHp(): string
-    {
-        return $this->no_hp;
-    }
-
-    public function setNoHp(string $no_hp): void
-    {
-        $this->no_hp = $no_hp;
     }
 }
