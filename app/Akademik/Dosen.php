@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\Akademik;
-
 
 use App\Akademik\Pegawai;
 use App\Akademik\PenilaianKinerja;
@@ -13,14 +11,18 @@ class Dosen extends Pegawai implements PenilaianKinerja
     private int $nidn;
     public int $jumlah_sks;
 
-
-    public function __construct(int $nip, string $nama, string $no_hp, string $alamat, string $nidn)
-    {
+    public function __construct(
+        int $nip,
+        string $nama,
+        string $no_hp,
+        string $alamat,
+        string $nidn,
+        int $jumlah_sks
+    ) {
         parent::__construct($nip, $nama, $no_hp, $alamat);
         $this->nidn = $nidn;
-        $this->jumlah_sks = 24;
+        $this->jumlah_sks = $jumlah_sks;
     }
-
 
     public function bekerja(): void
     {
