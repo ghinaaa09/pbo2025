@@ -19,14 +19,13 @@ abstract class Pegawai
         $this->alamat = $alamat;
     }
 
-
-    // Metode ini adalah "kontrak" dari abstract class.
-    // Setiap kelas turunan WAJIB memiliki implementasi metode ini.
     abstract public function bekerja(): void;
-
 
     public function cekIn(): void
     {
         echo $this->nama . " berhasil cek in.<br>";
+    }
+    public function getNoHp() : string {
+        return $this->no_hp;
     }
 }
