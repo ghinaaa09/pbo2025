@@ -25,7 +25,6 @@ class DbConnector
 
             try {
                 self::$instance = new PDO($dsn, self::DB_USER, self::DB_PASS, $options);
-                echo "Koneksi PDO berhasil dibuat.\n";
             } catch (PDOException $e) {
                 die("Koneksi Gagal: " . $e->getMessage());
             }
