@@ -17,11 +17,10 @@ class Dosen extends Pegawai implements PenilaianKinerja
         string $no_hp,
         string $alamat,
         string $nidn,
-        int $jumlah_sks
     ) {
         parent::__construct($nip, $nama, $no_hp, $alamat);
         $this->nidn = $nidn;
-        $this->jumlah_sks = $jumlah_sks;
+        $this->jumlah_sks = 24;
     }
 
     public function bekerja(): void
